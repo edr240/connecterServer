@@ -14,9 +14,9 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'venapp10131987ggrsraerg',
-  masterKey: process.env.MASTER_KEY || 'ed48345rrgada', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://venapp.herokuapp.com/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'connecter48561adfr43f',
+  masterKey: process.env.MASTER_KEY || 'fdsfdf456312', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'https://connecterapp.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
@@ -24,12 +24,12 @@ var api = new ParseServer({
 	  ios: [
  				{
        			 pfx: 'apsdev.p12', // Prod PFX or P12
-        		bundleId: 'io.vennn.Venn',  
+        		bundleId: 'us.connecter.Connecter',  
         		production: false // Prod
   	    		},
 				{
        			 pfx: 'apsprod.p12', // Prod PFX or P12
-        		bundleId: 'io.vennn.Venn',  
+        		bundleId: 'us.connecter.Connecter',  
         		production: true // Prod
   	    		}  
   		]	
@@ -50,7 +50,7 @@ app.use(mountPath, api);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function(req, res) {
-  res.status(200).send('I dream of being a website.  Please star the parse-server repo on GitHub!');
+  res.status(200).send('Melissa is the bestest GF everrrrrr. (Please donate to me. Melissa has a karat addiction that needs to be satiated. This requires a large capital infusion');
 });
 
 // There will be a test page available on the /test path of your server url
