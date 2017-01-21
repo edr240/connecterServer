@@ -28,7 +28,7 @@ Parse.Cloud.define("iosPush", function(request, response) {
   response.success('success');
 });
 
-Parse.Cloud.define("newFollowerPush", function(request, response) {
+Parse.Cloud.define("contactSharedPush", function(request, response) {
 
  var user = request.user;
   var params = request.params;
